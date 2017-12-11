@@ -1,0 +1,94 @@
+
+    <!DOCTYPE html>
+  <html><head> <title> js
+  </title></head>
+  <body>
+
+  <h2>JavaScript Functions</h2>
+
+  <p>This example calls a function calculate the square number:</p>
+
+  <p id="demo"></p>
+
+  <script>
+  function square(x) {
+      return x*x;
+  }
+  document.getElementById("demo").innerHTML = square(5);
+  </script>
+
+
+<!-- QUESTION: number 2 -->
+    <p id="demo1"></p>
+<script>
+function addNum(num1,num2) {
+  return num1+num2;
+}
+function subNum(num1,num2) {
+  return num1-num2;
+}
+function mulNum(num1,num2) {
+  return num1*num2;
+}
+function divNum(num1,num2) {
+  return num1/num2;
+}
+document.getElementById("demo1").innerHTML = "The addition of the two numbers is " + addNum(4, 3) +
+"<br>"+ "The subtraction of the two number is "  + subNum(6,3) + "</br>" +
+ "The multplication of the two number is " +  mulNum (5,6) + "</br>" + "the division of the two number is "
+ + divNum(100,2);
+</script>
+
+<script>
+function print() {
+window.alert("Hello World..!!");
+}
+
+print();
+</script>
+
+
+<!-- QUESTION: num 4 -->
+<p>calculate the volume of a cuboid </p>
+
+<p id="demo2"></p>
+
+<script>
+function myFunction(lenth, height, width) {
+    return lenth * height * width;
+}
+document.getElementById("demo2").innerHTML = myFunction(lenth=8 ,height=6, width=3);
+</script>
+
+<!--object question-->
+
+<p>Creating a JavaScript Object.</p>
+
+<p id="demo4"></p>
+
+<script>
+var person = {
+    firstName : "nimal",
+    lastName  : "raj",
+    age       : 15,
+    city  : "kandy"
+};
+
+document.getElementById("demo4").innerHTML = "My name is " +
+person.firstName + person.lastName + ". i am " + person.age + " years old." + " i live in" +person.city;
+</script>
+
+
+<!--last question-->
+<p>Creating a JavaScript Object.</p>
+
+<p id="demo5"></p>
+
+<script>
+var course = {courseName:"BIT", courseFee:"150000",startdate:"12.6.2018",center:"our office"};
+
+document.getElementById("demo5").innerHTML= "course name :" + course.courseName + "</br>" +"course fee :    " +course.courseFee + "</br>" + "startdate :   " + course.startdate + "</br>" + "center  :                           "  + course.center;
+</script>
+
+  </body>
+  </html>
